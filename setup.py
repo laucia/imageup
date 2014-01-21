@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
  
 setup(
-    name='django-ajax-feedback',
-    version=__import__('feedback').__version__,
-    description='Basic Django Feedback',
+    name='imageup',
+    version='0.0.1',
+    description='Basic Django admin image uploader',
     author='Lauris Jullien',
-    author_email='lauris@startup-from-scratch.com',
-    url='http://github.com/laucia/django-ajax-feedback/',
+    author_email='lauris@captain-startup.com',
+    url='http://github.com/laucia/imageup/',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',

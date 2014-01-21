@@ -1,0 +1,4 @@
+include AUTHORS
+include LICENSE
+recursive-include imageup/tests
+recursive-include imageup/locale *

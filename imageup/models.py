@@ -1,9 +1,12 @@
 import os
 
+from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils.translation import string_concat
 from django.utils.translation import ugettext_lazy as _
+
+MEDIA_FILENAME = getattr(settings, 'IMAGEUP_MEDIA_FILENAME', 'imageup')
 
 def get_image_path(instance, filename):
 	'''
@@ -13,7 +16,7 @@ def get_image_path(instance, filename):
 
 	ext = filename.split('.')[-1]
 	name = u'%s.%s' % (instance.title, ext)
-	return os.path.join('images', name)
+	return os.path.join(MEDIA_FILENAME, name)
 
 class UploadedImage(models.Model):
 	'''

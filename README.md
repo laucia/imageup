@@ -9,7 +9,7 @@ Images can then by easily managed (ie: replaced or suppressed) from the django a
 Installation
 ============
 
-- Put ``feedback`` in your ``INSTALLED_APPS``
+- Put ``imageup`` in your ``INSTALLED_APPS``
 - Synchronize this application to your database with ``syncdb`` or ``migrate`` if you are a South user.
 
 Options:
